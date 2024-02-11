@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-PINECONE_API_KEY = "bc2409cd-3568-4ffb-873d-faa8ad73e236"
+PINECONE_API_KEY = ""
 # pinecone.init(api_key=PINECONE_API_KEY, environment='gcp-starter')
 pinecone = Pinecone(api_key=PINECONE_API_KEY, environment='MyLLMTest')
 EMBEDDING_DIMENSION = 1536
