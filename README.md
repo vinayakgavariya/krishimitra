@@ -8,10 +8,19 @@
 <img src="https://i.imgur.com/FqOr8t8.png" witdth="800">
 
 ### Overview
+Krishi Mitra addresses the challenge faced by rural Indian farmers by providing a platform for agricultural education and guidance. It offers access to modern farming techniques, personalized mentorship, a 24/7 IVR helpline, and engagement with agricultural experts. By bridging the gap between traditional practices and modern advancements, Krishi Mitra empowers farmers to improve productivity, optimize resources, and enhance livelihoods.
 
 ### Features
+- Automated calling using vonage API.
+- AI chatboat which is specifically trained on agriculture .
+- Multiple language support.
+- Experts support to user.
+- Education without internet
 
 ### Problems it solves
+- Lack of immediate support and guidance.
+- Limited access to agricultural resources.
+- Dependency on traditional farming methods.
 
 ### Components of the full application:
 * **Backend (Flask):** This handles the logic to scrape the website and call OpenAI's Embeddings API to create embeddings from the website's text. It also stores these embeddings in the vector database (Pinecone) and retrieves relevant text to help the LLM answer the user's question.
@@ -50,8 +59,6 @@ python run.py
 cd client
 npm start
 ```
-
-## License
 
 
 
