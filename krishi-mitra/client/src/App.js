@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import UrlInput from './components/UrlInput';
 import ChatInterface from './components/ChatInterface';
-import Header from './components/Header';
-import Hero from './components/Hero';
+import "./App.css";
+import Landing from "./pages/Landing";
+import { Routes, Route } from "react-router-dom";
+import Experts from "./pages/Experts";
+import Form from "./components/Form";
+
 
 
 function App() {
@@ -31,8 +35,6 @@ function App() {
 
   return (
    <div>
-      <Header/>
-      <Hero/>
     <div className="App">
       
       {!showChat ? (
@@ -43,7 +45,14 @@ function App() {
         
       )}
     </div>
-    </div>
+
+    {/* <Routes>
+        <Route path="/" element={< Landing />} />
+        <Route path="/Experts" element={<Experts />} />
+        <Route path="/forms" element={<Form/>} />
+      </Routes> */}
+
+</div>
 
   );
 }
