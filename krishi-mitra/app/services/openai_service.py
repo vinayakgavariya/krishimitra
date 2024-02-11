@@ -3,7 +3,7 @@ import json
 import os
 from app.utils.helper_functions import build_prompt, construct_messages_list
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 OPENAI_EMBEDDING_MODEL = 'text-embedding-ada-002'
 PROMPT_LIMIT = 3750
 CHATGPT_MODEL = 'gpt-4-1106-preview'
